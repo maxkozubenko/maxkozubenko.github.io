@@ -3,107 +3,619 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Traveling</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="style.css"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="assets/slick/slick.min.js"></script>
-<script src="assets/jq/jquery-3.4.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+        <title>MasterStudy</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&amp;family=Open+Sans&amp;family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick-theme.css"/>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+        <script src="scripts.js" defer="defer"> </script>
     </head>
     <body>
-        <header class="header" id="header">
-            <div class="container">
-                <nav class="top-menu">
-                    <ul class="top-menu__list">
-                        <li class="top-menu__item"> <a class="top-menu__link" href="#header">Home</a></li>
-                        <li class="top-menu__item"> <a class="top-menu__link" href="#about">About</a></li>
-                        <li class="top-menu__item"> <a class="top-menu__link" href="#gallery">Travel</a></li>
+        <header class="header">
+            <div class="container-large">
+                <div class="header_small-menu"><a class="header_lang" href="#">English</a>
+                    <ul class="header_icons">
+                        <li class="header_icon-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="header_icon-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="header_icon-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="header_icon-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li class="header_icon-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="header_icon-item"><a href="#"><i class="fab fa-instagram"></i>   </a></li>
                     </ul>
-                </nav>
-                <div class="title">
-                    <h1 class="main-title">Business Travel</h1>
-                    <p class="title__subtitle">For entrepreneurs and freelancers</p>
-                    <div class="button"><a class="button__accept" href="#">More info </a></div>
+                    <ul class="header_menu">
+                        <li class="header_menu-item"><a href="#">About Us</a></li>
+                        <li class="header_menu-item"><a href="#">Careers</a></li>
+                        <li class="header_menu-item"><a href="#">Blog</a></li>
+                        <li class="header_menu-item"><a href="#">headerics</a></li>
+                        <li class="header_menu-item"><a href="#">Support</a></li>
+                        <li class="header_menu-item"><a href="#">Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="header_main-menu"><img class="header_logo" src="images/logo.png" alt=""/>
+                    <h1 class="header_site-name">Master <span class="header_site-name_reg">Study</span></h1>
+                    <form class="header_form" action="">
+                        <div class="header_dropdown">
+                            <button class="header_category"><i class="fas fa-bars"></i> Category</button>
+                            <div class="header_dropcontent" id="myDropdown">
+                                <ul class="header_dropmenu">
+                                    <li>
+                                                              <a href="#" class="header_dropitem">Software apps</a>
+                                        <div class="header_secondmenu" id="dropmenu">
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                                              <a href="#" class="header_dropitem">web-development</a>
+                                        <div class="header_secondmenu" id="dropmenu">
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                                              <a href="#" class="header_dropitem">Art & design</a>
+                                        <div class="header_secondmenu" id="dropmenu">
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                                              <a href="#" class="header_dropitem">Photography</a>
+                                        <div class="header_secondmenu" id="dropmenu">
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                                               <a href="#" class="header_dropitem">Sport & music</a>
+                                        <div class="header_secondmenu" id="dropmenu">
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                                               <a href="#" class="header_dropitem">Marketing</a>
+                                        <div class="header_secondmenu" id="dropmenu">
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                            <ul class="header_nmenu">
+                                                <li class="header_menuitem">All Development</li>
+                                                <li class="header_menuitem">Web Development</li>
+                                                <li class="header_menuitem">Mobile Apps</li>
+                                                <li class="header_menuitem">Programming Languages</li>
+                                                <li class="header_menuitem">Game Development</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input class="header_search" type="text" placeholder="Search courses..."/>
+                        <button class="header_submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <ul class="header_goals">
+                        <li class="header_item"><a href="#"><i class="fas fa-suitcase"></i> Become an Instructor </a></li>
+                        <li class="header_item"><a href="#"><i class="fas fa-volume-up"></i> For Enterprise</a></li>
+                    </ul>
+                    <button class="header_log">
+                        Log in<i class="far fa-user"></i></button>
+                    <button class="header_sing">Sing up</button><i class="fas fa-shopping-cart header_cart"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header_titles">
+                    <h2 class="header_title">Start investing in you</h2><span class="header_subtitle">With over 1200 courses in 18 subjects, you're guaranteed to find something that's right for you.</span>
+                </div>
+                <button class="header_but">Join for free</button>
+                <div class="header_feature">
+                    <div class="header_features"><img class="header_feat-pic" src="images/world.png" alt=""/>
+                        <h3 class="header_feat-title">Worldwide Recognised</h3><span class="header_feat-subtitle">Numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+                    </div>
+                    <div class="header_features"><img class="header_feat-pic" src="images/online.png" alt=""/>
+                        <h3 class="header_feat-title">Mostly Online Learning (sd)</h3><span class="header_feat-subtitle">Numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+                    </div>
+                    <div class="header_features"><img class="header_feat-pic" src="images/notes.png" alt=""/>
+                        <h3 class="header_feat-title">Graduate in as little as 1 Year </h3><span class="header_feat-subtitle">Numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span>
+                    </div>
                 </div>
             </div>
         </header>
-        <section class="about" id="about">
+        <div class="setcourses">
+            <div class="setcourses_item1">
+                <h2 class="setcourses_title">Software Development</h2><span class="setcourses_subtitle">Over 600 courses</span>
+            </div>
+            <div class="setcourses_item2">
+                <h2 class="setcourses_title">Painting Courses</h2><span class="setcourses_subtitle">Over 350 courses</span>
+            </div>
+            <div class="setcourses_item3">
+                <h2 class="setcourses_title">Photography</h2><span class="setcourses_subtitle">Over 290 courses</span>
+            </div>
+            <div class="setcourses_item4">
+                <h2 class="setcourses_title">Music & Dance</h2><span class="setcourses_subtitle">Over 150 courses</span>
+            </div>
+            <div class="setcourses_item5">
+                <h2 class="setcourses_title">Health & Fitness</h2><span class="setcourses_subtitle">Over 290 courses</span>
+            </div>
+            <div class="setcourses_item6">
+                <h2 class="setcourses_title">Web Development</h2><span class="setcourses_subtitle">Over 290 courses</span>
+            </div>
+        </div>
+        <div class="subscribe">
             <div class="container">
-                <article class="info"><span class="info__title">About us</span>
-                    <h2 class="info__description">We will turn your work into an exciting journey</h2>
-                    <p class="info__parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, molestias veniam tempora vitae sed nam, dolor quo nihil ipsa eveniet quia mollitia facere expedita non pariatur qui quos cumque iusto!</p>
-                    <p class="info__parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores soluta facere culpa, rem possimus quos, reiciendis odit libero voluptatem repellat, dicta autem ratione? Perferendis, fugit pariatur aliquid tempore a alias.    </p>
-                    <div class="button"><a class="button__accept_black" href="#">More info </a></div>
-                </article>
-                <div class="about__picture"></div>
-            </div>
-        </section>
-                <section class="section-title"><span class="section-title__header">Photos of our travels</span><span class="section-title__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit.</span></section>
-        <section class="gallery" id="gallery">
-            <div class="slider single-item">
-                <div>
-                    <div class="gallery__row-1"> <span class="gallery__row-1__1"> </span><span class="gallery__row-1__2"> </span><span class="gallery__row-1__3"> </span></div>
-                    <div class="gallery__row-2"> <span class="gallery__row-2__1"> </span><span class="gallery__row-2__2"> </span><span class="gallery__row-2__3"> </span></div>
-                    <div class="gallery__row-3"> <span class="gallery__row-3__1"> </span><span class="gallery__row-3__2"> </span><span class="gallery__row-3__3"></span></div>
+                <div class="subscribe__info">
+                    <h3 class="subscribe_title">Subscribe our newsletter</h3><span class="subscribe_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which Ipsum</span>
                 </div>
-                <div>
-                    <div class="gallery__row-4"> <span class="gallery__row-4__1"> </span><span class="gallery__row-4__2"> </span><span class="gallery__row-4__3"> </span></div>
-                    <div class="gallery__row-5"> <span class="gallery__row-5__1"> </span><span class="gallery__row-5__2"> </span><span class="gallery__row-5__3"> </span></div>
-                    <div class="gallery__row-6"> <span class="gallery__row-6__1"> </span><span class="gallery__row-6__2"> </span><span class="gallery__row-6__3"> </span></div>
-                </div>
+                <form class="subscribe__form" action="">
+                    <label class="subscribe__form_label" for="email">Your e-mail address </label><br/>
+                    <input class="subscribe__form_input" type="text" placeholder="Your e-mail address"/>
+                    <input class="subscribe__form_but" type="submit" value="SUBSCRIBE"/>
+                </form>
             </div>
-        </section>
-                <section class="section-title"><span class="section-title__header">Travel with our company</span><span class="section-title__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit.</span></section>
-        <section class="offers" id="travel">
-            <div class="offer">
-                <div class="offer__picture"></div>
-                <h3 class="offer__header">Comfortable premium class accommodations</h3>
-                <p class="offer__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptas eveniet quod ipsa aliquam, sit officia doloribus non culpa, molestiae dolorem error porro libero aspernatur veniam quidem vitae reprehenderit eos?</p><a class="offer__button" href="#">View photos       </a>
-            </div>
-            <div class="offer-2">
-                <div class="offer-2__picture"></div>
-                <h3 class="offer__header">Comfortable premium class accommodations</h3>
-                <p class="offer__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptas eveniet quod ipsa aliquam, sit officia doloribus non culpa, molestiae dolorem error porro libero aspernatur veniam quidem vitae reprehenderit eos?</p><a class="offer__button" href="#">View photos      </a>
-            </div>
-        </section>
-        <section class="tour" id="tour">
+        </div>
+        <div class="courses">
             <div class="container">
-                <article class="info"><span class="info__title">Next tour</span>
-                    <h2 class="info__description">Unforgettable adventure in filipinas</h2>
-                    <p class="info__parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, molestias veniam tempora vitae sed nam, dolor quo nihil ipsa eveniet quia mollitia facere expedita non pariatur qui quos cumque iusto!</p>
-                    <p class="info__parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores soluta facere culpa, rem possimus quos, reiciendis odit libero voluptatem repellat, dicta autem ratione? Perferendis, fugit pariatur aliquid tempore a alias.    </p>
-                    <p class="info__parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores soluta facere culpa, rem possimus quos, reiciendis odit libero voluptatem repellat, dicta autem ratione? Perferendis, fugit pariatur aliquid tempore a alias. </p>
-                    <div class="button"></div>
-                </article>
-                <div class="tour__picture"></div>
+                <div class="courses_title"><a href="#">Recent courses</a></div>
+                <div class="course_menu">
+                    <ul class="courses_categories">
+                        <li class="courses_items">
+                            <button>All Categories</button>
+                        </li>
+                        <li class="courses_items">
+                            <button>Photography</button>
+                        </li>
+                        <li class="courses_items">
+                            <button>Softwear Development</button>
+                        </li>
+                        <li class="courses_items">
+                            <button>Web-Design</button>
+                        </li>
+                        <li class="courses_items">
+                            <button>Music&Dancing</button>
+                        </li>
+                        <li class="courses_items">
+                            <button>Health&Fitness</button>
+                        </li>
+                        <li class="courses_items">
+                            <button>Marketing</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="courses_line">
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating"><i class="far fa-clock"></i><span class="time">3 Hours</span></div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Fashion ></a></div>
+                            <div class="details_name"><a href="#">Weight loss by Dieting, Training & Body...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                   <i class="far fa-clock"></i><span class="time">3 Hours </span></div>
+                            <div class="details_price">$29.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating"><i class="far fa-clock"></i><span class="time">3 Hours</span></div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Fashion ></a></div>
+                            <div class="details_name"><a href="#">Weight loss by Dieting, Training & Body...</a></div><span class="details_line"></span>
+                            <div class="details_rating"><i class="far fa-clock"></i><span class="time">3 Hours </span></div>
+                            <div class="details_price">$29.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating"><i class="far fa-clock"></i><span class="time">3 Hours</span></div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Fashion ></a></div>
+                            <div class="details_name"><a href="#">Weight loss by Dieting, Training & Body...</a></div><span class="details_line"></span>
+                            <div class="details_rating"><i class="far fa-clock"></i><span class="time">3 Hours</span></div>
+                            <div class="details_price">$29.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658)</span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Fashion ></a></div>
+                            <div class="details_name"><a href="#">Weight loss by Dieting, Training & Body...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658) </span>
+                            </div>
+                            <div class="details_price">$29.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658)</span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Fashion ></a></div>
+                            <div class="details_name"><a href="#">Weight loss by Dieting, Training & Body...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658) </span>
+                            </div>
+                            <div class="details_price">$29.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658)</span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658)</span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses_load"><span class="courses_points"></span><span class="courses_points"></span><span class="courses_points"></span><br/><a class="courses_text">Load more</a></div>
             </div>
-        </section>
-        <section class="form">
-            <div class="form__title">Book a discounter tour<br/><span class="form__subtitle">Mauris ultrices eros in cursus turpis</span></div>
-            <form class="input" action="">
-                <label for="">
-                    <input class="input__text" type="text" name="" placeholder="Name"/>
-                </label>
-                <label for="">
-                    <input class="input__text" type="email" name="" placeholder="Email"/>
-                </label>
-                <label for="">
-                    <input class="input__send" type="submit" value="Send"/>
-                </label>
-            </form>
-        </section>
+        </div>
+        <div class="pcourses">
+            <div class="container">
+                <div class="pcourses_title"><a href="#">Popular courses</a></div>
+                <div class="pcourses_subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eveniet vel vitae at expedita corrupti, minus nesciunt dolores</div>
+                <div class="responsive">
+                    <div class="course-item"><img src="images/city.jpg" alt=""/><span class="state"> <span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"></i></li>
+                                    <li class="stars"><i class="fas fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658)</span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Fashion ></a></div>
+                            <div class="details_name"><a href="#">Weight loss by Dieting, Training & Body...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658) </span>
+                            </div>
+                            <div class="details_price">$29.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#"><a href="#">Music & Dancing ></a></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating"> 
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658) </span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                </ul><span class="visitors">4.2 (658)</span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                </ul><span class="visitors">4.2 (658)</span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_sell">Bestseller </span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658) </span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658) </span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="course-item"> <img src="images/city.jpg" alt=""/><span class="state"><span class="state_new">New</span></span>
+                        <div class="details">
+                            <div class="details_set"><a href="#">Music & Dancing ></a></div>
+                            <div class="details_name"><a href="#">Apache Spark wirh Python Big Data with PySpark...</a></div><span class="details_line"></span>
+                            <div class="details_rating">
+                                <ul class="list-stars">
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"> </i></li>
+                                    <li class="stars"><i class="far fa-star"></i></li>
+                                </ul><span class="visitors">4.2 (658) </span>
+                            </div>
+                            <div class="details_price">$59.99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position">
+            <div class="container">
+                <div class="position__box"><img class="position_icon" src="images/teach.png" alt="Image Title"/>
+                    <div class="position__info">
+                        <h3 class="position_title">Become an instructor</h3>
+                        <div class="position_text">Teach what you love. Masterstudy gives you the tools to create an online course.</div>
+                        <button class="position_but">START TEACHING</button>
+                    </div>
+                </div><span class="position__divide"></span>
+                <div class="position__box"><img class="position_icon" src="images/stud.png" alt="Image Title"/>
+                    <div class="position__info">
+                        <h3 class="position_title">Masterstudy For Business</h3>
+                        <div class="position_text">Get unlimited access to 2,500 of Udemy’s top courses for your team.</div>
+                        <button class="position_but">DOING BUSINESS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="response">
+            <div class="container">
+                <div class="response__text">
+                    <h3 class="response_title">Investing for Your Future</h3>
+                    <div class="response_description">Sed est magna, porta nec felis ac, ultricies ultrices tortor. Aliquam venenatis eu turpis. Maecenas gravida erat ante, dignissim tempor dui malesuada sed. Etiam dictum tortor lectus, ac luctus mi feugiat ut.   Donec mattis justo vel laoreet pellentesque. Vestibulum condimentum eu urna vel cursus. Aenean vehicula quam quam, vitae pellentesque urna elementum cursus.</div><br/><span class="response_autor">Linda Green</span><br/><span class="response_position">Product Manager, Apple Inc</span>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
-            <nav class="nav-bot">
-                <ul class="nav-bot__list">
-                    <li class="nav-bot__items"><a class="nav-bot__link" href="#header">Home</a></li>
-                    <li class="nav-bot__items"><a class="nav-bot__link" href="#about">About</a></li>
-                    <li class="nav-bot__items"><a class="nav-bot__link" href="#gallery">Gallery</a></li>
-                    <li class="nav-bot__items"><a class="nav-bot__link" href="#travel">Travel</a></li>
-                </ul>
-            </nav>
-            <div class="private"><span class="private__name">Business travel</span><span class="rights">Travel 2019 | All rights reserved</span></div>
+            <div class="footer__container">
+                <div class="footer__box">
+                    <h4 class="footer_title">About</h4><span class="footer_description">Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel, rutrum eu ipsum. Mauris accumsan eros eget libero posuere vulputate.</span>
+                    <div class="footer_icons">
+                        <ul class="footer_menuicon">
+                            <li class="footer_itemicon"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            <li class="footer_itemicon"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                            <li class="footer_itemicon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__box">
+                    <h4 class="footer_title">Contact</h4>
+                    <ul class="footer_contacts">
+                        <li class="footer_contactitem">
+                            <address class="footer_contact">USA, Callifornia 20, Firs Avenue, Callifornia</address>
+                        </li><br/>
+                        <li class="footer_contactitem"><a class="footer_tel" href="#">Tel.:+1 212 458 300 32</a></li>
+                        <li class="footer_contactitem"><a class="footer_fax" href="">Fax: 1 212 375 24 14</a></li><br/>
+                        <li class="footer_contactitem"><a class="footer_mail" href="#">Info@masterstudy.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h4 class="footer_title">Pages</h4>
+                    <div class="footer__lists">
+                        <ul class="footer_list">
+                            <li class="footer_item"> <a href="#">About</a></li>
+                            <li class="footer_item"> <a href="#">Services</a></li>
+                            <li class="footer_item"> <a href="#">Blog</a></li>
+                            <li class="footer_item"> <a href="#">Events</a></li>
+                            <li class="footer_item"> <a href="#">Shop</a></li>
+                        </ul>
+                        <ul class="footer_list">
+                            <li class="footer_item"> <a href="#">About</a></li>
+                            <li class="footer_item"> <a href="#">Services</a></li>
+                            <li class="footer_item"> <a href="#">Blog</a></li>
+                            <li class="footer_item"> <a href="#">Events</a></li>
+                            <li class="footer_item"> <a href="#">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__box">
+                    <h4 class="footer_title">Blog</h4>
+                    <ul class="footer_blogs">
+                        <li class="footer_blogitem">
+                            <div class="footer__blog"><img class="footer_img" src="images/blog1.png" alt=""/><span class="footer_blog-text"><a href="#">Retail banks wake up to digital lending</a></span><span class="footer_date">- 28 february 2017</span></div>
+                        </li>
+                        <li class="footer_blogitem">
+                            <div class="footer__blog"><img class="footer_img" src="images/blog2.png" alt=""/><span class="footer_blog-text"><a href="#">Retail banks wake up to digital lending</a></span><span class="footer_date">- 28 february 2017</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__private"><span class="footer_rights">2018 Peral by Stylemix Themes. All rights reserved</span></div>
         </footer>
-        <script type="text/javascript" src="script.js" defer="defer"></script>
     </body>
 </html>
